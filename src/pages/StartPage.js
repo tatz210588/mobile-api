@@ -35,11 +35,13 @@ const StartPage = () => {
   }
   const getUsers = async () => {
     const response = await fetch('https://jsonplaceholder.typicode.com/posts')
-    setUsers(await response.json())
+
+    const temporaryUser = await response.json()
+    setUsers(temporaryUser)
     if (dropValue.length <= 1) {
       var temp = []
       temp.push(0)
-      users.forEach(function (item, index) {
+      temporaryUser.forEach(function (item, index) {
         if (temp.indexOf(item.userId) === -1) {
           temp.push(item.userId)
         }
