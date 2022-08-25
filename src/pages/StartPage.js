@@ -93,7 +93,7 @@ const StartPage = () => {
             {users.map((object) => {
               return (
                 <View style={styles.item} key={object.id}>
-                  <AccordionItem title={object.title} author={object.userId} bodyText={object.body} />
+                  <AccordionItem id={object.id} title={object.title} author={object.userId} bodyText={object.body} />
 
                 </View>
               )
