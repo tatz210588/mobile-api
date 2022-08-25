@@ -14,3 +14,14 @@ App functionalities:
 5. It is possible to refresh the list
 
 6. It is possible to switch between a dark and light mode
+
+############################
+How to Run the app:
+
+1. Download or clone the code from git repository
+
+2. Open terminal and run "yarn" or "npm install" or "npm i". This will install all the dependencies
+
+3. In the terminal type "yarn start" or "npm start" or "expo start".
+
+4. Scan the QR code in your device "ExpoGo" app or open simulator and enjoy the app
