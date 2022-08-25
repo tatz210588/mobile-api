@@ -11,12 +11,9 @@ const AccordionItem = ({ id, title, author, bodyText }) => {
 
     const editData = () => {
         fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
-            method: 'PUT',
+            method: 'PATCH',
             body: JSON.stringify({
-                id: id,
-                title: title,
                 body: val,
-                userId: author,
             }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
