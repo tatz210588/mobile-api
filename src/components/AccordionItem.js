@@ -10,7 +10,6 @@ const AccordionItem = ({ id, title, author, bodyText }) => {
     const [val, setVal] = useState()
 
     const editData = () => {
-        console.log("val", val)
         fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
             method: 'PUT',
             body: JSON.stringify({

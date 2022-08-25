@@ -171,7 +171,7 @@ const styles = StyleSheet.create({
     //justifyContent: 'center',
     //alignItems: 'center',
     borderRadius: 12,
-    padding: 12,
+    padding: 1,
   },
   content: {
     overflow: 'hidden',
